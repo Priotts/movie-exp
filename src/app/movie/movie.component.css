@@ -1,0 +1,62 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container mat-list {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  margin-top: 20px;
+}
+
+.container mat-list-item {
+  height: 100%;
+}
+
+.container img {
+  width: 50px;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+section {
+  display: flex;
+}
+
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.example-button-row {
+  display: table-cell;
+  max-width: 600px;
+}
+
+.example-button-row .mat-mdc-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+
+table {
+  min-width: 50%;
+}
+

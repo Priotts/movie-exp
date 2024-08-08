@@ -1,0 +1,79 @@
+.container {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container form {
+  width: 40%;
+  display: flex;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+mat-label {
+  font-size: x-large;
+}
+
+.example-button-row {
+  display: table-cell;
+  max-width: 600px;
+  margin-left: 20px;
+}
+
+.example-button-row .mat-mdc-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  font-weight: 500;
+  color: red;
+  height: 30%;
+}
+
+
+/* Smartphones (portrait) ---------------- */
+@media only screen and (max-width : 320px) {
+  .container form {
+    width: 80%;
+  }
+
+  mat-label {
+    font-size: smaller;
+  }
+
+  .example-button-row {
+    display: table-cell;
+    max-width: 300px;
+    margin-left: 5px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  .container form {
+    width: 90%;
+  }
+  mat-label {
+    font-size: smaller;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .container form {
+    width: 90%;
+  }
+}
