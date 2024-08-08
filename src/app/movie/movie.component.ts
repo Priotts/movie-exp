@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { MatListModule } from '@angular/material/list';
 import { NgFor, NgIf } from '@angular/common';
 import { MatDividerModule } from '@angular/material/divider';
@@ -21,13 +21,20 @@ export interface PeriodicElement {
   styleUrl: './movie.component.css'
 })
 
-export class MovieComponent implements OnInit {
+export class MovieComponent implements OnChanges {
   displayedColumns: string[] = ['img', 'name', 'info'];
   dataSource: PeriodicElement[] = [];
 
   @Input() movieData: any
 
-  ngOnInit(): void {
-    this.dataSource = this.movieData;
+  // ngOnInit(): void {
+  //   this.dataSource = this.movieData;
+  // }
+  
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log(changes)
+    if (changes['movieData'] && changes['movieData'].currentValue) {
+      this.dataSource = changes['movieData'].currentValue;
+    }
   }
 }
