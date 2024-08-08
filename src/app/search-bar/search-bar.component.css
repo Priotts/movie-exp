@@ -46,7 +46,7 @@ mat-label {
 }
 
 
-/* Smartphones (portrait) ---------------- */
+/* Smartphones ---------------- */
 @media only screen and (max-width : 320px) {
   .container form {
     width: 80%;

@@ -1,20 +1,3 @@
-<!-- <div class="container">
-    <mat-list role="list" *ngFor="let movie of movieData;">
-
-        <img [src]="movie.imageSet.verticalPoster.w240" name="img-container">
-        <mat-list-item role="listitem">
-            <p>{{movie.title}}</p>
-            <section>
-                <div class="example-button-row">
-                    <button mat-raised-button [routerLink]="['/movie', movie.id]" class="button">Dettagli</button>
-                </div>
-            </section>
-        </mat-list-item>
-
-    </mat-list>
-
-</div> -->
-
 <div class="container" *ngIf="movieData && movieData.length > 0">
     <table mat-table [dataSource]="movieData" class="mat-elevation-z8">
         <!-- Position Column -->

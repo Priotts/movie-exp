@@ -44,6 +44,9 @@ export class SearchBarComponent {
       // Chiama il servizio per cercare il film in base al titolo
       this.ricerca.ricercaFilm(title).subscribe({
         next: (data: any) => {
+          if (data.length == 0) {
+            this.errorMessage = "Nessun film trovato"
+          }
           this.moviesData = data; // Assegna i dati dei film
           this.xMandaDatiEvento.emit(this.moviesData); // Emette l'evento con i dati dei film
           this.loading = false; // Imposta lo stato di caricamento a false
