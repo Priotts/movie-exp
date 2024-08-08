@@ -35,7 +35,6 @@ export class MovieDetailsComponent implements OnInit {
     // Chiamatas API per ottenere i dettagli del film passando l'id
     this.ricercaFilm.ricercaFilmById(this.movieId).subscribe({
       next: (data: any) => {
-        console.log('Data fetched:', data);
         this.result = data; // Assegna i dati ricevuti alla variabile result
         this.loading = false
         this.cdr.markForCheck(); //Ricontrolliamo il componente 

@@ -14,7 +14,6 @@ export class ReqApiService {
   
   // Ricerca film per titolo
   ricercaFilm(value: string) {
-    console.log("API KEY ", this.RAPID_API_KEY)
     // URL per la richiesta
     const url = `https://streaming-availability.p.rapidapi.com/shows/search/title?country=gb&title=${value}&series_granularity=show&show_type=movie&output_language=en`
     const options = {

@@ -32,7 +32,6 @@ export class MovieComponent implements OnChanges {
   // }
   
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(changes)
     if (changes['movieData'] && changes['movieData'].currentValue) {
       this.dataSource = changes['movieData'].currentValue;
     }

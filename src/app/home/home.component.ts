@@ -14,6 +14,5 @@ export class HomeComponent {
 
   onRiceviDatiEvento(value: any) {
     this.data = value
-    console.log("data", this.data)
   }
 }
